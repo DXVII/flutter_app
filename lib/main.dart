@@ -13,21 +13,17 @@ void main() => runApp(
             foregroundColor: Colors.white,
             backgroundColor: Colors.lightGreen[900],
           ),
-          // body: const Center(
-          //   child: Text("Wow money"),
-          // ),
-          // backgroundColor: Colors.lightGreen[100],
           body: const Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              Center(child: Text("Wow money")),
+              Center(child: Text("Such Rich")),
+              Center(child: Text("Very App")),
               Center(
-                child: Text("Wow money"),
-              ),
-              Center(
-                child: Text("Such Rich"),
-              ),
-              Center(
-                child: Text("Very App"),
+                child: FractionallySizedBox(
+                  widthFactor: 0.4,
+                  child: Image(image: AssetImage('images/dollar.png')),
+                ),
               ),
             ],
           ),
